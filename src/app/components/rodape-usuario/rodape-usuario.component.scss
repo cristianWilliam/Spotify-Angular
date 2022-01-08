@@ -1,0 +1,31 @@
+@import 'variaveis';
+
+div{
+
+  padding: 5px 30px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: $cor-primaria;
+  border-top: 1px solid $preto-transparent-20;
+
+  img {
+    flex-grow: 0;
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  span {
+    flex-grow: 1;
+    margin-left: 20px;
+    font-size: .9rem;
+    font-weight: 700;
+  }
+
+  .icone {
+    flex-grow: 0;
+    cursor: pointer;
+  }
+}

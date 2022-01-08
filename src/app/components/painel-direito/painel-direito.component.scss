@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 300px;
+  width: 300px;
+  padding: 40px 20px 20px 20px;
+  
+  .player {
+    flex-grow: 1;
+  }
+}

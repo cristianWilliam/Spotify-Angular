@@ -1,0 +1,7 @@
+<button type="button"
+  [class.selecionado]="selecionado"
+  (click)="onClick()"
+>
+  <ng-content></ng-content>
+  <span>{{ descricao }} </span>
+</button>
