@@ -1,5 +1,5 @@
 import { Routes } from "@angular/router";
-import { AutenticadoGuard } from "./guards/autenticado.guard";
+import { usuarioEstaLogadoResolver } from "./resolvers/usuario-esta-logado.resolver";
 
 export const AppRotas: Routes = [
   {
@@ -10,7 +10,9 @@ export const AppRotas: Routes = [
   {
     path: 'player',
     loadChildren: () => import('./pages/player/player.module').then(x => x.PlayerModule),
-    canLoad: [AutenticadoGuard]
+    resolve: {
+      usuarioEstaLogado: usuarioEstaLogadoResolver,
+    }
   },
   {
     path: 'login',
